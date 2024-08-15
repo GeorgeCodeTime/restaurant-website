@@ -1,0 +1,464 @@
+.container-preloader {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+}
+
+.animation-preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    gap: 5vh;
+}
+
+.loader-section {
+    background-color: #001220;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.txt-loading img {
+    width: 40vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 241, 219);
+}
+
+.forumBackContent {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-forum {
+    max-width: 50vh;
+    width: 50vh;
+    border: solid 0.5vh black;
+    padding: 5vh;
+    border-radius: 4vh;
+    margin-top: 20vh;
+    position: relative;
+    animation-name: topanimation;
+    background-color: #001220;
+    animation-duration: 0.5s;
+}
+
+@keyframes topanimation {
+    from {
+        margin-top: 0;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 20vh;
+        opacity: 1;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 1vh;
+    text-align: left;
+    font-size: 3vh;
+    color: rgb(219, 241, 219);
+}
+
+input {
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 2.5vh;
+    box-sizing: border-box;
+    font-size: 2vh;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.close {
+    text-decoration: none;
+    color: rgb(219, 241, 219);
+    font-size: 4vh;
+    display: inline-block;
+    height: 4vh;
+    width: 4vh;
+    line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-login {
+    background-color: #009473;
+    color: rgb(219, 241, 219);
+    padding: 1.1vh 1.57vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 3.12vh;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.create-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.create-forgot a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(219, 241, 219);
+    font-size: 2vh;
+}
+
+.mainContent {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 15.5vh;
+    position: relative;
+}
+
+.bottom-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 1vh;
+    padding-top: 7vh;
+    padding-bottom: 31.5vh;
+}
+
+/* ================================================================================== */
+
+.my-account-links img {
+    width: 4vh;
+}
+
+.my-account-links {
+    font-size: 3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #001220;
+    color: rgb(219, 241, 219);
+    padding: 1.5vh 2vh;
+    gap: 1.5vh;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.my-account-links:hover {
+    background-color: #009473;
+    transition: background-color 0.2s ease-in;
+}
+
+.tabcontent {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    grid-template-columns: auto auto;
+    gap: 2vh;
+    width: 132.7vh;
+}
+
+.tabs {
+    border-radius: 1.8vh;
+    overflow: hidden;
+}
+
+.tabs a.active {
+    background-color: #009473;
+}
+
+.personal-data-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    background-color: #001220;
+    width: 60vh;
+    border-radius: 2vh;
+    padding: 4vh 1vh;
+}
+
+input {
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+.personal-data-form input {
+    width: 40vh;
+}
+
+.in-data-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+}
+
+.update-personal-data-button {
+    background-color: #009473;
+    color: rgb(219, 241, 219);
+    font-size: 3vh;
+    border: none;
+    padding: 1.5vh 2vh;
+    border-radius: 1.8vh;
+    cursor: pointer;
+}
+
+input[readonly] {
+    color: #888;
+    cursor: not-allowed;
+}
+
+.modify-password-content {
+    background-color: #001220;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vh 1vh;
+    border-radius: 2vh;
+    gap: 4vh;
+}
+
+.modify-password-content input {
+    width: 35vh;
+}
+
+.update-status-button {
+    background-color: #001220;
+    color: rgb(219, 241, 219);
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+    padding: 1.5vh 1.8vh;
+    border-radius: 1vh;
+    transition: background-color 0.2s ease-out;
+}
+
+.update-status-button:hover {
+    background-color: #009473;
+    transition: background-color 0.2s ease-in;
+}
+
+.update-reset-code button {
+    background-color: red;
+    color: rgb(219, 241, 219);
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+    padding: 1.5vh 1.8vh;
+    border-radius: 1vh;
+    width: 20vh;
+}
+
+.update-reset-code p {
+    margin: 0;
+    font-size: 1.4vh;
+    width: 20vh;
+    text-align: center;
+}
+
+.update-reset-code {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+}
+
+.success-message {
+    background-color: #001220;
+    padding: 2vh 3vh;
+    color: rgb(219, 241, 219);
+    border-radius: 1vh;
+    z-index: 3;
+    font-size: 3.2vh;
+}
+
+.success-message-container {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+/* ============================================================================================== */
+
+@media screen and (max-width: 995px) {
+    .tabcontent {
+        flex-direction: column !important;
+        width: auto !important;
+    }
+
+    #comenzileMelePreluareDate {
+        grid-template-columns: auto !important;
+    }
+
+    #rezervarileMelePreluareDate {
+        grid-template-columns: auto !important;
+    }
+}
+
+@media screen and (max-width: 979px){
+    .mainContent{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 608px){
+    .comanda-container{
+        width: 57vw !important;
+    }
+
+    .my-account-links{
+        font-size: 2.5vh;
+    }
+
+    .rezervare-container{
+        width: 57vw !important;
+    }
+
+    .personal-data-form{
+        width: 57vw;
+    }
+
+    .modify-password-content{
+        width: 57vw;
+    }
+}
+
+@media screen and (max-width: 488px){
+    .my-account-links{
+        font-size: 1.9vh;
+    }
+
+    .comanda-container p{
+        font-size: 2vh !important;
+    }
+
+    .rezervare-container p{
+        font-size: 2vh !important;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .my-account-links{
+        padding: 1.5vh 1vw;
+    }
+
+    .personal-data-form input{
+        width: 48vw;
+    }
+
+    .modify-password-content input{
+        width: 48vw;
+    }
+}
+
+@media screen and (max-width: 387px){
+    .comanda-container{
+        width: 48vw !important;
+    }
+
+    .rezervare-container{
+        width: 48vw !important;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .personal-data-form p{
+        font-size: 2.5vh !important;
+    }
+
+    .personal-data-form label{
+        font-size: 2.5vh !important;
+    }
+
+    .modify-password-content p{
+        font-size: 2.5vh !important;
+    }
+
+    .modify-password-content label{
+        font-size: 2.5vh !important;
+    }
+}
+
+@media screen and (max-width: 331px){
+    .personal-data-form{
+        width: 54vw;
+    }
+
+    .modify-password-content{
+        width: 54vw;
+    }
+
+    .update-personal-data-button{
+        font-size: 2vh;
+    }
+
+    .update-status-button{
+        font-size: 2vh;
+    }
+}

@@ -1,0 +1,205 @@
+.container-preloader {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+}
+
+.animation-preloader {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    gap:5vh;
+}
+
+.loader-section {
+    background-color: #001220;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.txt-loading img{
+    width: 40vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 241, 219);
+}
+
+* {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mainContent {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8.5vh;
+}
+
+
+/* =========================================================================================================== */
+
+.email-reset-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-reset-password form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2vh;
+    background-color: #001220;
+    padding: 4vh 4vh;
+    border: 0.8vh dashed #009473;
+    border-radius: 2vh;
+}
+
+.email-reset-password p, .reset-password-container p{
+    color:rgb(219, 241, 219);
+    margin: 0;
+    font-size: 4.5vh;
+    text-align: center;
+}
+
+label{
+    color:rgb(219, 241, 219);
+    font-size: 3.8vh;
+}
+input{
+    width: 42vh;
+    border: none;
+    outline: none;
+    padding: 1vh 1.2vh;
+    font-size: 2vh;
+}
+
+.email-reset-password button{
+    font-size: 3vh;
+    background-color:#009473;
+    color: rgb(219, 241, 219);
+    border: none;
+    padding: 0.7vh 1.5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.reset-password-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4vh;
+    background-color: #001220;
+    padding: 4vh 4vh;
+    border: 0.8vh dashed #009473;
+    border-radius: 2vh;
+}
+
+.reset-password-container button{
+    font-size: 3vh;
+    background-color:#009473;
+    color: rgb(219, 241, 219);
+    border: none;
+    padding: 0.7vh 1.5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.success-message {
+    color: #001220;
+    font-size: 5vh;
+    text-align: center;
+    background-color: rgb(144, 236, 52);
+    z-index: 9;
+    padding: 2vh 2vh;
+    border-radius: 2vh;
+    border:solid 0.3vh #001220;
+    width: 80vh;
+}
+
+.success-message-container{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.back_to_main_page{
+    font-size: 3vh;
+    background-color:#009473;
+    color: rgb(219, 241, 219);
+    border: 0.5vh solid #001220;
+    padding: 0.7vh 1.5vh;
+    border-radius: 1.2vh;
+    cursor: pointer;
+    text-decoration: none;
+    width: 30vh;
+    text-align: center;
+}
+
+@media screen and (max-width: 940px){
+    .position{
+        flex-direction: column;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    input{
+        width: 60vw;
+    }
+
+    .mainContent{
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 443px){
+    .email-reset-password p, .reset-password-container p{
+        font-size: 3vh;
+    }
+
+    label{
+        font-size: 3vh;
+    }
+}

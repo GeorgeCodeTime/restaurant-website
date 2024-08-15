@@ -1,0 +1,22 @@
+{
+    "name": "george/restaurant",
+    "description": "Proiect licenta",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Coman George"
+        }
+    ],
+    
+    "config": {
+        "preferred-install": {
+            "*": "dist",
+            "phpmailer/phpmailer": "source"
+        },
+        "archive-format": "zip"
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "stripe/stripe-php": "^13.15"
+    }
+}

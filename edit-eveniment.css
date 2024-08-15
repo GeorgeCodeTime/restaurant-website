@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.editContainer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(221, 232, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+
+.editContainer section {
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+  height: 85vh;
+  width: 80vh;
+  border: solid 0.5vh black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vh;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.label1 {
+  display: block;
+  margin-bottom: 1vh;
+  text-align: left;
+  font-size: 3vh;
+  color: rgb(219, 241, 219);
+
+}
+
+.input1 {
+  width: 100%;
+  padding: 1vh;
+  margin-bottom: 2.5vh;
+  box-sizing: border-box;
+  font-size: 2vh;
+  color: black;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  color: rgb(219, 241, 219);
+  font-size: 4vh;
+  margin: 0;
+  margin-bottom: 5vh;
+}
+
+.updateEvent {
+  background-color: green;
+  color: rgb(219, 241, 219);
+  padding: 1.1vh 1.57vh;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-size: 3vh;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 2vh;
+}
+
+
+
+.backTo {
+  background-color: red;
+  color: rgb(219, 241, 219);
+  padding: 1.1vh 1.57vh;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-size: 3vh;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.updateForm {
+  width: 60vh;
+}
+
+center {
+  margin-top: 2vh;
+}
+
+.eventContainer {
+  height: 35vh;
+  width: 100vh;
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+  border: 0.5vh black solid;
+  position: relative;
+  border-radius: 2vh;
+  overflow: hidden;
+}
+
+.eventImage {
+  width: 48vh;
+  transition: transform 1s ease;
+}
+
+.eventImage:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.zoom {
+  overflow: hidden;
+  width: 48vh;
+  height: 27vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vh;
+  position: absolute;
+  top: 27vh;
+  width: 48vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(219, 241, 219);
+}
+
+.title h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.descriere {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2vh;
+  width: 49vh;
+  left: 49.3vh;
+  text-align: justify;
+}
+
+.descriere p {
+  font-size: 2vh;
+  margin: 0;
+  padding: 0;
+  color:rgb(219, 241, 219);
+}
+
+.dataEvent {
+  position: absolute;
+  top: 27vh;
+  right: 3.9vh;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  color:rgb(219, 241, 219);
+}
+
+.adminEditButton:hover {
+  transform: translate(4px, 0px);
+}
+
+.dataEvent p {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  text-decoration: none;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-preloader {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+.animation-preloader {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  gap:5vh;
+}
+
+
+.spinner {
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 5vh solid rgb(219, 241, 219);
+  border-top-color: #009473;
+  height: 20vh;
+  width: 20vh;
+}
+
+.loader-section {
+  background-color: #001220;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.txt-loading img{
+  width: 40vh;
+}
+
+@keyframes spinner {
+  to {
+      transform: rotateZ(360deg);
+  }
+}
+
+input{
+  border:none;
+  outline: none;
+  display: flex;
+}
+
+textarea{
+  border:none;
+  outline:none;
+  display: flex;
+}
+
+input[type=file]{
+  border:none;
+  outline: none;
+  display: flex;
+}
